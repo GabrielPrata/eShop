@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\microservicos\\GeekShop\\geekshop.productapi\\GeekShop.ProductAPI.csproj": {}
+    "C:\\microservicos\\GeekShop\\GeekShop.ProductAPI\\GeekShop.ProductAPI.csproj": {}
   },
   "projects": {
-    "C:\\microservicos\\GeekShop\\geekshop.productapi\\GeekShop.ProductAPI.csproj": {
+    "C:\\microservicos\\GeekShop\\GeekShop.ProductAPI\\GeekShop.ProductAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\microservicos\\GeekShop\\geekshop.productapi\\GeekShop.ProductAPI.csproj",
+        "projectUniqueName": "C:\\microservicos\\GeekShop\\GeekShop.ProductAPI\\GeekShop.ProductAPI.csproj",
         "projectName": "GeekShop.ProductAPI",
-        "projectPath": "C:\\microservicos\\GeekShop\\geekshop.productapi\\GeekShop.ProductAPI.csproj",
+        "projectPath": "C:\\microservicos\\GeekShop\\GeekShop.ProductAPI\\GeekShop.ProductAPI.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\microservicos\\GeekShop\\geekshop.productapi\\obj\\",
+        "outputPath": "C:\\microservicos\\GeekShop\\GeekShop.ProductAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,11 +47,15 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[12.0.0, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.31, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -65,7 +69,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.6.2, )"
+              "version": "[6.1.5, )"
             },
             "Swashbuckle.AspNetCore.Annotations": {
               "target": "Package",

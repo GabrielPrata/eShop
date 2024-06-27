@@ -43,3 +43,11 @@ C:\microservicos\GeekShop\geekshop.productapi\bin\Debug\net6.0\MySqlConnector.dl
 C:\microservicos\GeekShop\geekshop.productapi\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\microservicos\GeekShop\geekshop.productapi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\microservicos\GeekShop\geekshop.productapi\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\microservicos\GeekShop\GeekShop.ProductAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\microservicos\GeekShop\GeekShop.ProductAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\microservicos\GeekShop\GeekShop.ProductAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\microservicos\GeekShop\GeekShop.ProductAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\microservicos\GeekShop\GeekShop.ProductAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\microservicos\GeekShop\GeekShop.ProductAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\microservicos\GeekShop\GeekShop.ProductAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\microservicos\GeekShop\GeekShop.ProductAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
