@@ -7,11 +7,11 @@ namespace GeekShop.ProductAPI.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    public class ProductsController : ControllerBase
+    public class ProductController : ControllerBase
     {
         private IProductRepository _productRepository;
 
-        public ProductsController(IProductRepository productRepository)
+        public ProductController(IProductRepository productRepository)
         {
             _productRepository = productRepository ?? throw new ArgumentException(nameof(productRepository));
         }
@@ -28,13 +28,13 @@ namespace GeekShop.ProductAPI.Controllers
         public async Task<ActionResult<ProductVO>> FindById(long id)
         {
             var product =  await _productRepository.FindById(id);
-            if(product.Id >= 0) return NotFound();
+            if(product == null) return NotFound();
             return Ok(product);
 
         }
 
         [HttpPost]
-        public async Task<ActionResult<ProductVO>> Create(ProductVO vo)
+        public async Task<ActionResult<ProductVO>> Create([FromBody] ProductVO vo)
         {
             if (vo == null) return BadRequest();
 
@@ -44,7 +44,7 @@ namespace GeekShop.ProductAPI.Controllers
         } 
         
         [HttpPut]
-        public async Task<ActionResult<ProductVO>> Update(ProductVO vo)
+        public async Task<ActionResult<ProductVO>> Update([FromBody] ProductVO vo)
         {
             if (vo == null) return BadRequest();
 

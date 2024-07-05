@@ -11,7 +11,7 @@ namespace GeekShop.Web.Services
 
         public ProductService(HttpClient client)
         {
-            _client = client ?? throw new ArgumentNullException(nameof(ClientCertificateOption));
+            _client = client ?? throw new ArgumentNullException(nameof(client));
         }
 
         public async Task<IEnumerable<ProductModel>> FindAllProducts()
@@ -26,7 +26,7 @@ namespace GeekShop.Web.Services
             return await response.ReadContentAs<ProductModel>();
         }
 
-        public async Task<ProductModel> CreacteProduct(ProductModel model)
+        public async Task<ProductModel> CreateProduct(ProductModel model)
         {
             var response = await _client.PostAsJson(BasePath, model);
 

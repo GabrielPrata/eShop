@@ -27,7 +27,7 @@ namespace GeekShop.ProductAPI.Repository
         public async Task<ProductVO> FindById(long id)
         {
             //Se não encontrar, retorna uma instância vazia
-            Product product = await _context.Products.Where(p => p.Id == id).FirstOrDefaultAsync() ?? new Product();
+            Product product = await _context.Products.Where(p => p.Id == id).FirstOrDefaultAsync();
             return _mapper.Map<ProductVO>(product);
         }
 
