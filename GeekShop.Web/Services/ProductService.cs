@@ -15,9 +15,8 @@ namespace GeekShop.Web.Services
             _client = client ?? throw new ArgumentNullException(nameof(client));
         }
 
-        public async Task<IEnumerable<ProductModel>> FindAllProducts(string token)
+        public async Task<IEnumerable<ProductModel>> FindAllProducts()
         {
-            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
            var response = await _client.GetAsync(BasePath);
            return await response.ReadContentAs<List<ProductModel>>();
         }
