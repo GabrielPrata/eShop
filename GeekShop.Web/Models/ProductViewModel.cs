@@ -3,7 +3,7 @@
 namespace GeekShop.Web.Models
 {
     //VO ou DTO
-    public class ProductModel
+    public class ProductViewModel
     {
         public long Id { get; set; }
         public string Name { get; set; }

@@ -121,7 +121,7 @@ namespace GeekShop.CartAPI.Repository
                 //Se o header não esta nulo, atualizo as informações
                 //Verifica se CartDetail tem o mesmo produto
                 var cartDetail = await _context.CartDetails.AsNoTracking().FirstOrDefaultAsync(p =>
-                    p.ProductId == vo.CartDetails.FirstOrDefault().ProductId
+                    p.ProductId == cart.CartDetails.FirstOrDefault().ProductId
                     && p.CartHeaderId == cartHeader.Id
                 );
 
@@ -129,7 +129,7 @@ namespace GeekShop.CartAPI.Repository
                 {
                     //Crio o cart detail
                     //Passar para um método dps
-                    cart.CartDetails.FirstOrDefault().CartHeaderId = cart.CartHeader.Id;
+                    cart.CartDetails.FirstOrDefault().CartHeaderId = cartHeader.Id;
                     cart.CartDetails.FirstOrDefault().Product = null;
                     _context.CartDetails.Add(cart.CartDetails.FirstOrDefault());
                 }

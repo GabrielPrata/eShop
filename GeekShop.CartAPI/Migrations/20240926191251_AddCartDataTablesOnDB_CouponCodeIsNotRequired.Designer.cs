@@ -2,6 +2,7 @@
 using GeekShop.CartAPI.Model.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GeekShop.CartAPI.Migrations
 {
     [DbContext(typeof(MySQLContext))]
-    partial class MySQLContextModelSnapshot : ModelSnapshot
+    [Migration("20240926191251_AddCartDataTablesOnDB_CouponCodeIsNotRequired")]
+    partial class AddCartDataTablesOnDB_CouponCodeIsNotRequired
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
